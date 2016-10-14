@@ -19,13 +19,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Code here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="W3U-9i-6uz">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="256" id="x0y-TD-thd"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W3U-9i-6uz">
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardAppearance="alert"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1A-Zd-dZF">
                                 <state key="normal" title="Gist It!"/>
@@ -44,6 +42,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="n38-gi-rB5" firstAttribute="top" secondItem="W3U-9i-6uz" secondAttribute="bottom" constant="8" id="11F-W9-JON"/>
                             <constraint firstAttribute="trailingMargin" secondItem="W3U-9i-6uz" secondAttribute="trailing" constant="8" id="1DM-6b-l6g"/>
                             <constraint firstItem="a1A-Zd-dZF" firstAttribute="centerX" secondItem="zMn-AG-sqS" secondAttribute="centerX" id="ADS-y6-Zcs"/>
                             <constraint firstItem="W3U-9i-6uz" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leadingMargin" constant="8" id="Fvl-sp-WM1"/>
@@ -58,6 +57,7 @@
                     <connections>
                         <outlet property="codeTextView" destination="W3U-9i-6uz" id="uKY-Gr-jqJ"/>
                         <outlet property="fileNameLabel" destination="5e4-ey-OsY" id="SJp-gl-4AA"/>
+                        <outlet property="gistButton" destination="a1A-Zd-dZF" id="z3C-wk-FKV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>

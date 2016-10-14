@@ -11,9 +11,23 @@ import Messages
 
 class MessagesViewController: MSMessagesAppViewController {
     
+    @IBOutlet var fileNameLabel: UITextField!
+    @IBOutlet var codeTextView: UITextView!
+    @IBAction func gistIt(_ sender: AnyObject) {
+        
+    }
+    
+    var conv: MSConversation?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+//        let tapGestureRecogniser = UITapGestureRecognizer(target: self, action: #selector(expandExtension))
+//        fileNameLabel.addGestureRecognizer(tapGestureRecogniser)
+//        codeTextView.addGestureRecognizer(tapGestureRecogniser)
+    }
+    
+    func expandExtension() {
+        requestPresentationStyle(.expanded)
     }
     
     override func didReceiveMemoryWarning() {
@@ -28,6 +42,7 @@ class MessagesViewController: MSMessagesAppViewController {
         // This will happen when the extension is about to present UI.
         
         // Use this method to configure the extension and restore previously stored state.
+        conv = conversation
     }
     
     override func didResignActive(with conversation: MSConversation) {

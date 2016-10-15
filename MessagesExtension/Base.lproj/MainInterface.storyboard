@@ -31,6 +31,11 @@
                                     <action selector="gistIt:" destination="ObA-dk-sSI" eventType="touchUpInside" id="K3g-Xx-Taq"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hit the arrow in the corner to expand!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FdA-CJ-W9o">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="File.name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5e4-ey-OsY">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="Glu-97-YOm"/>
@@ -48,7 +53,9 @@
                             <constraint firstItem="W3U-9i-6uz" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leadingMargin" constant="8" id="Fvl-sp-WM1"/>
                             <constraint firstItem="5e4-ey-OsY" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leadingMargin" constant="8" id="JwP-K4-W5r"/>
                             <constraint firstItem="5e4-ey-OsY" firstAttribute="top" secondItem="a1A-Zd-dZF" secondAttribute="bottom" constant="16" id="LCO-7D-jOP"/>
+                            <constraint firstItem="FdA-CJ-W9o" firstAttribute="centerY" secondItem="zMn-AG-sqS" secondAttribute="centerY" id="SwO-EA-ZAq"/>
                             <constraint firstItem="a1A-Zd-dZF" firstAttribute="top" secondItem="qkL-Od-lgU" secondAttribute="bottom" constant="8" id="c1K-ki-bv1"/>
+                            <constraint firstItem="FdA-CJ-W9o" firstAttribute="centerX" secondItem="zMn-AG-sqS" secondAttribute="centerX" id="k0j-U3-Lnb"/>
                             <constraint firstItem="W3U-9i-6uz" firstAttribute="top" secondItem="5e4-ey-OsY" secondAttribute="bottom" constant="8" id="n5E-tF-QqI"/>
                         </constraints>
                     </view>
@@ -58,6 +65,7 @@
                         <outlet property="codeTextView" destination="W3U-9i-6uz" id="uKY-Gr-jqJ"/>
                         <outlet property="fileNameLabel" destination="5e4-ey-OsY" id="SJp-gl-4AA"/>
                         <outlet property="gistButton" destination="a1A-Zd-dZF" id="z3C-wk-FKV"/>
+                        <outlet property="tutorialLabel" destination="FdA-CJ-W9o" id="hYT-98-RJi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -14,6 +14,7 @@ class MessagesViewController: MSMessagesAppViewController {
     @IBOutlet var fileNameLabel: UITextField!
     @IBOutlet var codeTextView: UITextView!
     @IBOutlet var gistButton: UIButton!
+    @IBOutlet var tutorialLabel: UILabel!
     var task: URLSessionDataTask?
     @IBAction func gistIt(_ sender: AnyObject) {
         guard let fileName = fileNameLabel.text, fileName.characters.count > 0 else {
@@ -100,6 +101,13 @@ class MessagesViewController: MSMessagesAppViewController {
 //        fileNameLabel.addGestureRecognizer(tapGestureRecogniser)
 //        codeTextView.addGestureRecognizer(tapGestureRecogniser)
         setupKeyboardNotifications()
+        
+        switch presentationStyle {
+        case .compact:
+            hideUI()
+        case .expanded:
+            showUI()
+        }
     }
     
     func dismissKeyboard() {
@@ -139,6 +147,7 @@ class MessagesViewController: MSMessagesAppViewController {
         
         // Use this method to configure the extension and restore previously stored state.
         conv = conversation
+        
     }
     
     override func didResignActive(with conversation: MSConversation) {
@@ -172,12 +181,39 @@ class MessagesViewController: MSMessagesAppViewController {
         // Called before the extension transitions to a new presentation style.
     
         // Use this method to prepare for the change in presentation style.
+        
+        switch presentationStyle {
+        case .compact:
+            hideUI()
+        case .expanded:
+            showUI()
+        }
+    }
+    
+    func hideUI() {
+        gistButton.isHidden = true
+        fileNameLabel.isHidden = true
+        codeTextView.isHidden = true
+        tutorialLabel.isHidden = false
+    }
+    
+    func showUI() {
+        gistButton.isHidden = false
+        fileNameLabel.isHidden = false
+        codeTextView.isHidden = false
+        tutorialLabel.isHidden = true
     }
     
     override func didTransition(to presentationStyle: MSMessagesAppPresentationStyle) {
         // Called after the extension transitions to a new presentation style.
     
         // Use this method to finalize any behaviors associated with the change in presentation style.
+//        switch presentationStyle {
+//        case .compact:
+//            hideUI()
+//        case .expanded:
+//            showUI()
+//        }
     }
 
 }

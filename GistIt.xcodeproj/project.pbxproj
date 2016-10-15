@@ -14,6 +14,11 @@
 		A85A95D11DB1418500C44943 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A85A95CF1DB1418500C44943 /* MainInterface.storyboard */; };
 		A85A95D31DB1418500C44943 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A85A95D21DB1418500C44943 /* Assets.xcassets */; };
 		A85A95FC1DB155E400C44943 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85A95FB1DB155E400C44943 /* SwiftyJSON.swift */; };
+		A85A96041DB2349F00C44943 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85A96031DB2349F00C44943 /* AppDelegate.swift */; };
+		A85A96061DB2349F00C44943 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85A96051DB2349F00C44943 /* ViewController.swift */; };
+		A85A96081DB2349F00C44943 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A85A96071DB2349F00C44943 /* Assets.xcassets */; };
+		A85A960B1DB2349F00C44943 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A85A96091DB2349F00C44943 /* Main.storyboard */; };
+		A85A96121DB23F4000C44943 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85A95FB1DB155E400C44943 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,12 @@
 		A85A95D21DB1418500C44943 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A85A95D41DB1418500C44943 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A85A95FB1DB155E400C44943 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		A85A96011DB2349F00C44943 /* GistIt for macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GistIt for macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A85A96031DB2349F00C44943 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A85A96051DB2349F00C44943 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A85A96071DB2349F00C44943 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A85A960A1DB2349F00C44943 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A85A960C1DB2349F00C44943 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +73,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A85A95FE1DB2349F00C44943 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -70,6 +88,7 @@
 			children = (
 				A85A95BD1DB1418400C44943 /* GistIt */,
 				A85A95CC1DB1418500C44943 /* MessagesExtension */,
+				A85A96021DB2349F00C44943 /* GistIt for macOS */,
 				A85A95C91DB1418500C44943 /* Frameworks */,
 				A85A95BC1DB1418400C44943 /* Products */,
 			);
@@ -80,6 +99,7 @@
 			children = (
 				A85A95BB1DB1418400C44943 /* GistIt.app */,
 				A85A95C51DB1418500C44943 /* MessagesExtension.appex */,
+				A85A96011DB2349F00C44943 /* GistIt for macOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,6 +131,18 @@
 				A85A95D41DB1418500C44943 /* Info.plist */,
 			);
 			path = MessagesExtension;
+			sourceTree = "<group>";
+		};
+		A85A96021DB2349F00C44943 /* GistIt for macOS */ = {
+			isa = PBXGroup;
+			children = (
+				A85A96031DB2349F00C44943 /* AppDelegate.swift */,
+				A85A96051DB2349F00C44943 /* ViewController.swift */,
+				A85A96071DB2349F00C44943 /* Assets.xcassets */,
+				A85A96091DB2349F00C44943 /* Main.storyboard */,
+				A85A960C1DB2349F00C44943 /* Info.plist */,
+			);
+			path = "GistIt for macOS";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +182,23 @@
 			productReference = A85A95C51DB1418500C44943 /* MessagesExtension.appex */;
 			productType = "com.apple.product-type.app-extension.messages";
 		};
+		A85A96001DB2349F00C44943 /* GistIt for macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A85A960D1DB2349F00C44943 /* Build configuration list for PBXNativeTarget "GistIt for macOS" */;
+			buildPhases = (
+				A85A95FD1DB2349F00C44943 /* Sources */,
+				A85A95FE1DB2349F00C44943 /* Frameworks */,
+				A85A95FF1DB2349F00C44943 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GistIt for macOS";
+			productName = "GistIt for macOS";
+			productReference = A85A96011DB2349F00C44943 /* GistIt for macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -166,6 +215,11 @@
 						ProvisioningStyle = Automatic;
 					};
 					A85A95C41DB1418500C44943 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = K68WDDJ6BS;
+						ProvisioningStyle = Automatic;
+					};
+					A85A96001DB2349F00C44943 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = K68WDDJ6BS;
 						ProvisioningStyle = Automatic;
@@ -187,6 +241,7 @@
 			targets = (
 				A85A95BA1DB1418400C44943 /* GistIt */,
 				A85A95C41DB1418500C44943 /* MessagesExtension */,
+				A85A96001DB2349F00C44943 /* GistIt for macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -209,6 +264,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A85A95FF1DB2349F00C44943 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A85A96081DB2349F00C44943 /* Assets.xcassets in Resources */,
+				A85A960B1DB2349F00C44943 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -218,6 +282,16 @@
 			files = (
 				A85A95FC1DB155E400C44943 /* SwiftyJSON.swift in Sources */,
 				A85A95CE1DB1418500C44943 /* MessagesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A85A95FD1DB2349F00C44943 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A85A96121DB23F4000C44943 /* SwiftyJSON.swift in Sources */,
+				A85A96061DB2349F00C44943 /* ViewController.swift in Sources */,
+				A85A96041DB2349F00C44943 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +312,14 @@
 				A85A95D01DB1418500C44943 /* Base */,
 			);
 			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		A85A96091DB2349F00C44943 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A85A960A1DB2349F00C44943 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -390,6 +472,40 @@
 			};
 			name = Release;
 		};
+		A85A960E1DB2349F00C44943 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = K68WDDJ6BS;
+				INFOPLIST_FILE = "GistIt for macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "ink.designdev.GistIt-for-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A85A960F1DB2349F00C44943 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = K68WDDJ6BS;
+				INFOPLIST_FILE = "GistIt for macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "ink.designdev.GistIt-for-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -415,6 +531,14 @@
 			buildConfigurations = (
 				A85A95DC1DB1418500C44943 /* Debug */,
 				A85A95DD1DB1418500C44943 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A85A960D1DB2349F00C44943 /* Build configuration list for PBXNativeTarget "GistIt for macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A85A960E1DB2349F00C44943 /* Debug */,
+				A85A960F1DB2349F00C44943 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
